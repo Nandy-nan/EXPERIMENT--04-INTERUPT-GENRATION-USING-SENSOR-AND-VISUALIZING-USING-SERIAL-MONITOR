@@ -119,6 +119,7 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 ## STM 32 CUBE PROGRAM :
 #if defined (__ICCARM__) || defined (__ARMCC_VERSION)
+
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 #elif defined(__GNUC__)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
