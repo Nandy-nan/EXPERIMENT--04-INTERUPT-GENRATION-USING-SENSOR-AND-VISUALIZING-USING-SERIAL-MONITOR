@@ -118,7 +118,8 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
   
 
 ## STM 32 CUBE PROGRAM :
-#if defined (_ICCARM) || defined (_ARMCC_VERSION)
+
+#if defined (_ICCARM) || defined (_ARMCC_VERSION)\n
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 #elif defined(_GNUC_)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
@@ -141,7 +142,6 @@ void HAL_GPIO_EXIT_Callback(uint16_t GPIO_Pin)
 		printf("INTERRUPT DOESNOT OCCURED\n");
 	}
 }
-
 
 ## Output screen shots of serial port utility   :
 
